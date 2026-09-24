@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url(assets/images/bg.jpg);
+    height: 70vh;
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1200px, 100vw);
+}
+
+.box {
+    background-color: black;
+    width: 100%;
+    height: 70vh;
+    position: absolute;
+    top: 0;
+    opacity: 0.69;
+
+}
+
+nav {
+    display: flex;
+    max-width: 60vw;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+    height: 62px;
+
+}
+
+nav img {
+    color: red;
+    width: 114px;
+    position: relative;
+    z-index: 10;
+}
+
+.button button {
+
+    position: relative;
+    z-index: 10;
+}
+
+.hero {
+    height: calc(100% - 62px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    font-family: "Roboto", sans-serif;
+    gap: 23px;
+    padding: 0 30px;
+
+}
+
+.hero> :nth-child(1) {
+    font-size: 48px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.hero> :nth-child(2) {
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+}
+
+.hero> :nth-child(3) {
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+
+.sepration {
+    height: 3px;
+    background-color: rgb(46, 44, 44);
+
+}
+
+.btn {
+    padding: 3px 8px;
+    font-weight: 500;
+    color: white;
+    border: 1px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+    ;
+    background-color: rgba(23, 23, 23, 0.2);
+    ;
+}
+
+.btn-red {
+
+    background-color: rgb(229, 9, 20);
+    color: rgb(255, 255, 255);
+
+}
+
+.red-btn-sm {
+    background: rgb(229, 9, 20);
+    color: rgb(255, 255, 255);
+
+    padding: 3px 24px;
+    font-size: 20px;
+    border-radius: 4px;
+}
+
+.hero-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.main input {
+    color: white;
+    background-color: rgba(23, 23, 23, 0.7);
+    border: 1px solid rgba(246, 238, 238, 0.7);
+    padding: 7px 101px 8px 14px;
+    font-weight: 900;
+    font-size: 12px;
+    border-radius: 4px;
+}
+
+.first {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+}
+
+.secimg {
+    position: relative;
+}
+
+.secimg img {
+    width: 555px;
+    position: relative;
+    z-index: 10;
+
+}
+
+.secimg video {
+    position: absolute;
+    top: 51px;
+    right: 0;
+    width: 555px;
+}
+
+section.first>div {
+    display: flex;
+    flex-direction: column;
+    padding: 34px 0;
+}
+
+section.first>div :nth-child(1) {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+section.first>div :nth-child(2) {
+    font-size: 24px;
+    /* font-weight: 400; */
+}
+
+.faq {
+    background-color: black;
+    color: white;
+    padding: 34px;
+}
+
+.faq h2 {
+    font-size: 48px;
+    text-align: center;
+}
+
+.faqbox:hover {
+    background-color: #414141;
+}
+
+.faqbox {
+    transition: all 0.1s ease-out;
+    display: flex;
+    background-color: rgb(45, 45, 45);
+    padding: 24px;
+    max-width: 60vw;
+    margin: 34px auto;
+    font-size: 24px;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.faqbox svg {
+    filter: invert(1);
+}
+
+
+
+.content {
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 17px;
+    margin-top: 34px;
+}
+
+.mail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.mail input {
+    color: white;
+    background-color: rgba(23, 23, 23, 0.7);
+    border: 1px solid rgba(246, 238, 238, 0.7);
+    padding: 15px 267px 17px 14px;
+    margin: 21px 0px;
+    font-weight: 900;
+    font-size: 17px;
+    border-radius: 4px;
+}
+
+.mail button {
+
+    background-color: rgb(229, 9, 20);
+    color: rgb(255, 255, 255);
+    padding: 10px 25px;
+    font-size: 29px;
+    border-radius: 4px;
+
+}
+
+.info {
+    padding: 34px 0;
+}
+
+.info a {
+    color: white;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.footer-item a {
+    color: white;
+    text-decoration: none;
+}
+
+footer {
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+    padding: 60px;
+}
+
+@media screen and (max-width: 1300px) {
+
+    .first {
+        flex-wrap: wrap;
+    }
+
+    .secimg img {
+        width: 305px;
+    }
+
+    .secimg video {
+        width: 305px;
+    }
+
+    .hero> :nth-child(1) {
+        font-size: 32px;
+    }
+
+    .hero> :nth-child(2) {
+        font-size: 18px;
+    }
+
+    .hero> :nth-child(3) {
+        font-size: 18px;
+    }
+
+    nav {
+        max-width: 73vw;
+    }
+
+    .hero-btns {
+        flex-direction: column;
+    }
+
+    .mail {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mail button {
+        font-size: 22px;
+    }
+
+    .mail input {
+        padding: 16px 31px 17px 14px;
+        margin: 21px 0px;
+        font-weight: 900;
+        font-size: 17px;
+    }
+
+    .faq h2 {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 55px;
+
+        justify-content: center;
+        align-items: center;
+    }
+
+    
+
+    footer {
+        max-width: 90vw;
+    }
+}
